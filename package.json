@@ -1,6 +1,6 @@
 {
   "name": "ziweidoushu-mcp",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "紫微斗数排盘 Model Context Protocol (MCP) 服务",
   "type": "module",
   "main": "./dist/index.js",
