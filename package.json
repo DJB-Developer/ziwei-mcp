@@ -1,0 +1,39 @@
+{
+  "name": "ziweidoushu-mcp",
+  "version": "1.0.3",
+  "description": "紫微斗数排盘 Model Context Protocol (MCP) 服务",
+  "type": "module",
+  "main": "./dist/index.js",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "scripts": {
+    "tsc": "rm -rf dist && tsc",
+    "prepublishOnly": "npm run tsc && chmod +x dist/stdio.js",
+    "start": "npm run tsc && node dist/httpServer.js"
+  },
+  "bin": {
+    "ziweidoushu-mcp": "./dist/stdio.js"
+  },
+  "keywords": [
+    "紫微斗数",
+    "ziwei",
+    "astrology",
+    "mcp",
+    "命理"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.10.2",
+    "express": "^5.0.1",
+    "iztro": "^2.5.4",
+    "zod": "^3.24.3"
+  },
+  "devDependencies": {
+    "@tsconfig/node22": "^22.0.1",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.14.1",
+    "typescript": "^5.8.3"
+  }
+}

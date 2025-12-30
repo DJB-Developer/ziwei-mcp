@@ -1,0 +1,10 @@
+services:
+  ziwei-mcp:
+    build: .
+    image: ziwei-mcp:latest
+    container_name: ziwei-mcp
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+    restart: unless-stopped
